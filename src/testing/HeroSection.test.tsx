@@ -29,5 +29,4 @@ describe('HeroSection', () => {
     expect(screen.getByText(/unlock achievements/i)).toBeInTheDocument();
     expect(screen.getByText(/tell your friends what's good/i)).toBeInTheDocument();
   })
-
 });

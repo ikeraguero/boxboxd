@@ -1,11 +1,10 @@
 import './App.css'
 import { AppLayout } from './components/layout/AppLayout'
-import { HeroSection } from '@/components/HeroSection'
+import AppRouter from '@/routes/AppRouter'
 
 function App() {
   return <AppLayout>
-    <HeroSection />
-     {/* <Button onClick={() => alert("a")}>Get started - it's free!</Button> */}
+    <AppRouter />
   </AppLayout>
 }
 
