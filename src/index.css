@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@theme inline {
+  --color-testpink: hotpink;
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -11,6 +14,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
+  --color-card-input: var(--card-input);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
@@ -45,7 +49,9 @@
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
+  --card: #1a1a1a;
+  --card-input: #222222;
+  --card-input-border: 
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);

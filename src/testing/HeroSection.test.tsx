@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeAll } from 'vitest';
+import { describe, it, expect, beforeAll, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 
 import { HeroSection } from '@/components/HeroSection';
@@ -6,7 +6,7 @@ import { HeroSection } from '@/components/HeroSection';
 describe('HeroSection', () => {
 
   beforeAll(() => {
-    render(<HeroSection />);
+    render(<HeroSection onOpen={vi.fn()} />);
   })
   it('should render the hero image', () => {
     const image = screen.getByRole('img', {

@@ -1,7 +1,12 @@
 import heroImage from "@/assets/img/boxboxd-hero-image.jpeg";
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui/Button";
 
-export function HeroSection() {
+type HeroSectionProps = {
+  onOpen: () => void
+}
+
+export function HeroSection({onOpen} : HeroSectionProps) {
+
   return (
     <div className="w-full relative">
       <img
@@ -22,7 +27,7 @@ export function HeroSection() {
           <span>Tell your friends what's good.</span>
         </div>
         <div className="flex justify-center">
-          <Button size={"sm"}>Get started - It's free! </Button>
+          <Button size={"sm"} onClick={onOpen}>Get started - It's free! </Button>
         </div>
       </div>
     </div>
